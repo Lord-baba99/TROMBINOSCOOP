@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Connexion{% endblock %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block bodyId %}loginPage{% endblock %}
+
+{% block content %}
+<form action="login" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!--{% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}-->
+    <!--<p>
+        <label for="email">Courriel :</label>
+        <input type="email" name="email" id="email" size="30">
+    </p>
+    <p>
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" id="password" size="30">
+    </p>
+    <p>-->
+        <input type="submit" value="Se connecter">
+        <a href="#">Créer un compte</a>
+    </p>
+</form>
+{% endblock %}

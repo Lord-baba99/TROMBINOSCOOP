@@ -1,0 +1,59 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background: #3b5998 no-repeat;
+    background-image: url('../img/logo_trombinoscoop.png');
+    background-size: 250px;
+    background-position-y: center;
+    background-position-x: 100px;
+    border-bottom: 1px solid #133783
+}
+
+/* body{
+    padding: 0 100px;
+} */
+
+#content{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 500px;
+    margin: 0 0 0 -250px;
+}
+
+form label{
+    display: block;
+    width: 150px;
+    float: left;
+    text-align: right;
+    padding: 4px 10px 0 0;
+}
+
+form input[type="email"],
+form input[type="password"]{
+    display: block;
+    width: 250px;
+    padding: 2px;
+}
+
+form input[type="submit"]{
+    margin: 0 20px 0 160px;
+    border-style: solid 1px;
+    border-color: #d9dfea #0e1f5b #0e1f5b #d9dfea;
+    color: white;
+    background-color: #3b5998;
+    padding: 2px 15px 3px 15px;
+    text-align: center;
+}
+
+a{
+    color: #3b5998;
+}
+
+.error{
+    margin-left: 160px;
+    color: red;
+}
